@@ -1,0 +1,29 @@
+{
+  "name": "3d-earth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naffiq/3d-earth.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naffiq/3d-earth/issues"
+  },
+  "homepage": "https://github.com/naffiq/3d-earth#readme",
+  "dependencies": {
+    "three": "^0.94.0",
+    "three-orbit-controls": "^82.1.0",
+    "three-window-resize": "^1.0.4"
+  },
+  "devDependencies": {
+    "parcel": "^1.9.3"
+  }
+}
