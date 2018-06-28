@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
+    "build": "parcel index.html --out-dir docs/ --public-url /3d-globe/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
