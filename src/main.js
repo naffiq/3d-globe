@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import OrbitControlsSetup from "three-orbit-controls";
+
 const OrbitControls = OrbitControlsSetup(THREE);
-OrbitControls.minDistance = 10;
 
 import earthMaterial from "./materials/earthMaterial";
 import cloudMaterial from "./materials/cloudMaterial";
@@ -28,7 +28,7 @@ var directionalLight = new THREE.DirectionalLight(0xffffff, 1);
 directionalLight.name = "directional";
 directionalLight.position.copy(new THREE.Vector3(100, 10, -50));
 
-function init() {
+export function init() {
   scene = new THREE.Scene();
 
   renderer = new THREE.WebGLRenderer();
@@ -67,16 +67,6 @@ function render() {
 
   renderer.render(scene, camera);
 }
-
-document.addEventListener("resize", function() {
-  renderer.setSize(window.innerWidth, window.innerHeight);
-
-  cameraAspect = window.innerWidth / window.innerHeight;
-  camera.aspect = cameraAspect;
-  camera.updateProjectionMatrix();
-});
-
-init();
 
 window.addEventListener(
   "resize",
